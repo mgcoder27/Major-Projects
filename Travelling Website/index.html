@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travelia - Discover More. Explore Further</title>
-    <meta name="title" content="VentureVista - Discover More. Explore Further">
-    <meta name="description" content="VentureVista is a travel website that helps you discover new places and explore further.">
+    <meta name="title" content="Travelia - Discover More. Explore Further">
+    <meta name="description" content="Travelia is a travel website that helps you discover new places and explore further.">
 
     <!--
         favicon
@@ -18,6 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="images/hero-banner.png">
+    <link rel="preload" as="image" href="images/preloader.svg">
 </head>
 <body>
 
@@ -71,6 +73,43 @@
             <div class="overlay" data-overlay data-nav-toggler></div>
         </div>
      </header>
+
+     <main>
+        <article>
+            <section class="section hero has-bg-image" aria-label="hero" style="background-image: url('images/hero-bg.jpg')">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-subtitle">
+                        Explore the World <img src="images/title-icon.svg" width="20" height="20" alt="world icon" class="img">
+                    </p>
+                    <h1 class="h1 title hero-title">
+                        It's a big World out there, Go explore it.
+                    </h1>
+                    <p class="hero-text">
+                        We always make our customers happy with our services and we always try to provide the best services to our customers.
+                    </p>
+                    <div class="wrapper">
+                        <a href="#" class="btn btn-secondary">
+                            <span class="span">Plan a Trip</span>
+                            <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                        <button class="hero-btn">
+                            <div class="btn-img">
+                                <img src="images/hero-button-img.jpg" width="100px" height="100px" alt="Our Story" class="img-cover">
+                                <ion-icon name="play" aria-hidden="true"></ion-icon>
+                            </div>
+                            <p class="text">Watch our story</p>
+                        </button>
+                    </div>
+                </div>
+                <figure class="hero-banner">
+                    <img src="images/hero-banner.png" width="631px" height="735px" alt="hero banner" class="w-100">
+                </figure>
+            </div>
+            </section>
+        </article>
+     </main>
+
 
     <script src="script.js"></script>
 

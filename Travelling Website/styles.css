@@ -18,6 +18,9 @@ a{
     text-decoration: none;
     color: inherit;
 }
+img{
+    height: auto;
+}
 input, button{
     border: none;
     background-color: none;
@@ -82,6 +85,42 @@ body.nav-active{
 .btn-secondary:is(:hover, :focus-visible){
     background-color: hsl(357, 64%, 53%);
     box-shadow: 0 5px 10px hsla(357, 64%, 53%, 25%);
+}
+
+.section{
+    padding-block-end: 80px;
+}
+
+.has-bg-image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.title{
+    color: hsl(209, 40%, 14%);
+    font-weight: 600;
+    line-height: 1.45;
+}
+.h1{
+    font-size: 4.2rem;
+    line-height: 1.2;
+}
+.h2{
+    font-size: 3.6rem;;
+}
+.h3{
+    font-size: 2.5rem;
+}
+.img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 500ms ease;
+}
+.w-100{
+    width: 50%;
 }
 .preloader{
     position: fixed;
@@ -260,4 +299,68 @@ body.nav-active{
     opacity: 0.5;
     visibility: visible;
 
+}
+
+
+/* HERO SECTION */
+.hero{
+    padding-block-start: 150px;
+}
+.hero .container{
+    display: grid;
+    gap: 50px;
+}
+.hero-subtitle{
+    background-color: hsl(0, 100%, 95%);
+    color: hsl(357, 96%, 73%);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: max-content;
+    padding: 8px 20px;
+    border-radius: 200px;
+}
+.hero-title{
+    margin-block: 20px;
+}
+.hero-text{
+    margin-block-end: 30px;
+}
+.hero .btn-secondary{
+    margin-block-end: 20px;
+}
+.hero-btn{
+    color: hsl(209, 40%, 14%);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: 250ms ease;
+}
+.hero-btn .btn-img{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: hsl(0, 1%, 85%);
+    border-radius: 50%;
+    box-shadow: 0 2px 10px hsla(209, 40%, 14%, 10%);
+}
+
+.hero-btn .img-cover{
+    border-radius: inherit;
+}
+.hero-btn ion-icon{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px hsla(209, 40%, 14%, 10%);
+}
+
+.hero-btn:is(:hover, :focus-visible){
+    color: hsl(249, 95%, 63%);
 }
