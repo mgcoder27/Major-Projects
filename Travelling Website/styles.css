@@ -120,8 +120,19 @@ body.nav-active{
     transition: 500ms ease;
 }
 .w-100{
-    width: 50%;
+    width: 100%;
 }
+
+.section-subtitle{
+    color: hsl(249, 95%, 63%);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.section-title{
+    margin-block: 10px;
+
+}
+
 .preloader{
     position: fixed;
     top: 0;
@@ -363,4 +374,26 @@ body.nav-active{
 
 .hero-btn:is(:hover, :focus-visible){
     color: hsl(249, 95%, 63%);
+}
+
+/* SERVICES SECTION */
+.service .container{
+    display: grid;
+    gap: 25px;
+}
+.service-card:nth-child(2){
+    background-color:  hsla(40, 100%, 50%, 0.05);
+}
+.service-card:nth-child(3){
+    background-color:  hsla(357, 94%, 63%, 0.05);
+}
+.service-card:nth-child(4){
+    background-color:  hsla(249, 95%, 63%, 0.05);
+}
+.service-card{
+    padding: 25px 20px;
+    border-radius: 20px;
+}
+.service-card .card-title{
+    margin-block: 10px 5px;
 }
